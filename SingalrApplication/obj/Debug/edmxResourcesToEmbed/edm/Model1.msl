@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="emplyoyeeModelStoreContainer" CdmEntityContainer="emplyoyeeEntities">
+    <EntitySetMapping Name="notifications">
+      <EntityTypeMapping TypeName="emplyoyeeModel.notification">
+        <MappingFragment StoreEntitySet="notification">
+          <ScalarProperty Name="notificationmsg" ColumnName="notificationmsg" />
+          <ScalarProperty Name="isread" ColumnName="isread" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

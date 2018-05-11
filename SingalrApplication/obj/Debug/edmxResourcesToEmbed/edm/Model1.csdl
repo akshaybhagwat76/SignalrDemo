@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="emplyoyeeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="emplyoyeeEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="notifications" EntityType="emplyoyeeModel.notification" />
+  </EntityContainer>
+  <EntityType Name="notification">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="isread" Type="Boolean" />
+    <Property Name="notificationmsg" Type="Int64" />
+  </EntityType>
+</Schema>
